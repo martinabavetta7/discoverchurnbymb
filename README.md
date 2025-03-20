@@ -24,8 +24,9 @@ This repository showcases a data science project focusing on churn prediction. I
 
     
     conda activate discoverchurn_env
-  ```  
-## Esecuzione
+  ```
+
+ ## Esecuzione  
 1.  **Execute Streamlit app:**
    ```bash
 
