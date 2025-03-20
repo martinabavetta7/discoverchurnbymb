@@ -34,9 +34,17 @@ The dataset for this project is `Churn_Modelling.csv`, based on a bank's custome
 
 ## Modello
 
-The model for this project is a **Gradient Boosting Classifier** trained with **SMOTE** to balance data. 
-- The code to train this model is stored in `temp.py`
-- The serialized model is stored in `gbm_smote_model.pkl`
+The project compares five different machine learning models:
+- **Random Forest**
+- **Gradient Boosting**
+- **Logistic Regression**
+- **Support Vector Machine (SVM)**
+- **K-Nearest Neighbors (KNN)**
+
+Hyperparameter tuning has been applied to **Random Forest** and **Gradient Boosting** to improve performance. Additionally, **SMOTE** has been used to balance the dataset for **Gradient Boosting**, and its performance has been compared with **XGBoost**.
+
+- The code to train these models is stored in `temp.py`
+- The serialized **Gradient Boosting with SMOTE** model is stored in `gbm_smote_model.pkl`
 - The serialized scaler is stored in `scaler.pkl`
 
 ## App
@@ -46,10 +54,11 @@ The Streamlit app allows users to insert client data and get a **churn probabili
 ## Riassunto
 
 The summary of my data science project can be seen in `churn_prediction.xlsx`. This file includes:
-- A comparison among different models
-- The implementation of **hyperparameter tuning** and **SMOTE** methods applied to **Random Forest** and **Gradient Boosting** models (the most performant ones)
+- A comparison among the five models: **Random Forest, Gradient Boosting, Logistic Regression, SVM, and KNN**
+- The implementation of **hyperparameter tuning** and **SMOTE** methods applied to **Random Forest** and **Gradient Boosting**
 - A comparison between **Gradient Boosting with SMOTE** and **XGBoost**
-- An overview of the correlation between features and targets with different graphs and a map
+- An overview of the correlation between features and targets with different graphs
+- **A geographical map visualization** showing the relationship between customer locations and churn probability
 
 ## Autore
 
@@ -58,3 +67,7 @@ Martina Bavetta
 ## Licenza
 
 This project is released under the **MIT License**.
+
+
+
+
