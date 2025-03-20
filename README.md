@@ -9,14 +9,14 @@ This repository showcases a data science project focusing on churn prediction. I
 
     git clone [https://github.com/martinabavetta7/discoverchurnbymb.git](https://github.com/martinabavetta7/discoverchurnbymb.git)
     ```
-2.  **Create a conda environment from `environment.yml`file:**
+**Create a conda environment from `environment.yml` file:**
+
    ```bash
-    conda env create -f environment.yml
-    ```
+   conda env create -f environment.yml
 3.  **Activate conda environment:**
     ```bash
     conda activate discoverchurn_env
-    ```
+    
 ## Esecuzione
 1.  **Execute Streamlit app:**
    ```bash
