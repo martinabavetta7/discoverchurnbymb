@@ -43,7 +43,7 @@ The project compares five different machine learning models:
 
 Hyperparameter tuning has been applied to **Random Forest** and **Gradient Boosting** to improve performance. Additionally, **SMOTE** has been used to balance the dataset for **Gradient Boosting**, and its performance has been compared with **XGBoost**.
 
-- The code to train these models is stored in `temp.py`
+- The code to train these models is stored in `train_models.py`
 - The serialized **Gradient Boosting with SMOTE** model is stored in `gbm_smote_model.pkl`
 - The serialized scaler is stored in `scaler.pkl`
 
