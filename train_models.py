@@ -600,30 +600,29 @@ from sklearn.preprocessing import LabelEncoder
 file_path = r"C:\Users\HP\Downloads\Churn_Modelling.csv"
 df = pd.read_csv(file_path)
 
-# 🔍 Esplorazione dei dati
+
 print(df.head()) #Mostrare le prime 5 righe del mio dataset
 print(df.isnull().sum())# Controllo valori nulli
 print(df.info()) #Informazioni sul dataset
 df[df.duplicated()]
 label_encoder=LabelEncoder()
-# 🚀 Preprocessing
+
 df = df.drop(['RowNumber', 'CustomerId', 'Surname'], axis=1)
 
-# One-Hot Encoding per Geography
+
 df = pd.get_dummies(df, columns=['Geography'], drop_first=True)
 
-# Encoding per Gender
 df['Gender'] = label_encoder.fit_transform(df['Gender'])
 
-# 📊 Definizione delle variabili
+
 X = df.drop('Exited', axis=1)
 y = df['Exited']
 
 
-# 🎯 Split Train/Test
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# 🔢 Scaling
+
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
@@ -632,13 +631,13 @@ X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
 gbm_smote = GradientBoostingClassifier(n_estimators=100, random_state=42)
 gbm_smote.fit(X_train_smote, y_train_smote)
 y_pred_gbm_smote = gbm_smote.predict(X_test)
-# Salva il modello
+
 with open('gbm_smote_model.pkl', 'wb') as f:
     pickle.dump(gbm_smote, f)
 
 print("Modello gbm_smote salvato come gbm_smote_model.pkl")
 
-# Salva lo scaler
+
 with open('scaler.pkl', 'wb') as f:
     pickle.dump(scaler, f)
 
