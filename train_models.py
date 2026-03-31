@@ -22,7 +22,7 @@ from sklearn.feature_selection import RFE, SelectFromModel
 from scipy.stats import chi2_contingency
 import plotly.express as px
 
-file_path = r"C:\Users\HP\Downloads\Churn_Modelling.csv"
+file_path = "Churn_Modelling.csv"
 df = pd.read_csv(file_path)
 
 
@@ -597,7 +597,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 
-file_path = r"C:\Users\HP\Downloads\Churn_Modelling.csv"
+file_path = "Churn_Modelling.csv"
 df = pd.read_csv(file_path)
 
 
