@@ -1,7 +1,7 @@
 # discoverchurnbymb
 This repository showcases a data science project focusing on churn prediction. It features a Machine Learning model and an interactive Streamlit app for real-time predictions and visualizations. Specifically, it is based on a dataset containing information about male and female bank clients from Spain, Germany, and France. The focus is the prediction of churn in dependence on specific features, namely age, gender, Credit Score, tenure, balance, number of products, the possession of a credit card, activity, salary, and geography.
 
-## Installazione
+## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -18,7 +18,7 @@ This repository showcases a data science project focusing on churn prediction. I
    conda activate discoverchurn_env
    ```
 
-## Esecuzione
+## Execution
 
 1. **Execute Streamlit app:**
    ```bash
@@ -28,11 +28,11 @@ This repository showcases a data science project focusing on churn prediction. I
 2. **Open the Browser to the web address provided by the app:**
    Streamlit will print a URL in the terminal; open it in your web browser.
 
-## Dati
+## Data
 
 The dataset for this project is `Churn_Modelling.csv`, based on a bank's customer data from Spain, France, and Germany.
 
-## Modello
+## Models
 
 The project compares five different machine learning models:
 - **Random Forest**
@@ -51,7 +51,7 @@ Hyperparameter tuning has been applied to **Random Forest** and **Gradient Boost
 
 The Streamlit app allows users to insert client data and get a **churn probability prediction**. The app also includes **interactive visualizations**.
 
-## Riassunto
+## Summary
 
 The summary of my data science project can be seen in `churn_prediction.xlsx`. This file includes:
 - A comparison among the five models: **Random Forest, Gradient Boosting, Logistic Regression, SVM, and KNN**
@@ -60,11 +60,11 @@ The summary of my data science project can be seen in `churn_prediction.xlsx`. T
 - An overview of the correlation between features and targets with different graphs
 - **A geographical map visualization** showing the relationship between customer locations and churn probability
 
-## Autore
+## Author
 
 Martina Bavetta
 
-## Licenza
+## License
 
 This project is released under the **MIT License**.
 
